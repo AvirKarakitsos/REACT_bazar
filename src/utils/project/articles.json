@@ -1,0 +1,89 @@
+[
+    {
+        "id": 1,
+        "categoryId": 2,
+        "title" : "Hunger Game - catching Fire",
+        "description": "livre en bon état",
+        "availableOn": [
+            {
+                "id":1,
+                "tag": "vinted"
+            },
+            {
+                "id": 2,
+                "tag": "rakuten"
+            }
+        ],
+        "photos": [
+            {
+                "id":1,
+                "url": "test"
+            },
+            {
+                "id": 2,
+                "url": "test"
+            }
+        ],
+        "price": 3.5,
+        "isNew": false,
+        "createdAt": "01-2025"
+    },
+    {
+        "id": 2,
+        "categoryId": 2,
+        "title" : "Categories - Aristote",
+        "description": "livre en bon état",
+        "availableOn": [
+            {
+                "id":1,
+                "tag": "vinted"
+            },
+            {
+                "id": 2,
+                "tag": "rakuten"
+            }
+        ],
+        "photos": [
+            {
+                "id":1,
+                "url": "test"
+            },
+            {
+                "id": 2,
+                "url": "test"
+            }
+        ],
+        "price": 4,
+        "isNew": false,
+        "createdAt": "01-2025"
+    },
+    {
+        "id": 3,
+        "categoryId": 3,
+        "title" : "Lot de 2 cartes dresseurs - Expedition",
+        "description": "cartes en très bon état",
+        "availableOn": [
+            {
+                "id":1,
+                "tag": "vinted"
+            },
+            {
+                "id": 2,
+                "tag": "rakuten"
+            }
+        ],
+        "photos": [
+            {
+                "id":1,
+                "url": "test"
+            },
+            {
+                "id": 2,
+                "url": "test"
+            }
+        ],
+        "price": 5,
+        "isNew": false,
+        "createdAt": "01-2025"
+    }
+]

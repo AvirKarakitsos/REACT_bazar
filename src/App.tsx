@@ -1,5 +1,7 @@
 import './App.css'
+import Category from './components/Category'
 import Header from './components/Header'
+import categories from "./utils/project/categories.json"
 
 function App() {
 
@@ -27,7 +29,8 @@ function App() {
 			<li>Pièces de monnaies</li>
 		</ul>
 	</div>
-	<div className='banner'></div>
+	{categories.map( categorie => <Category key={categorie.id} categoryId={categorie.id}/>)}
+	
     </>
   )
 }

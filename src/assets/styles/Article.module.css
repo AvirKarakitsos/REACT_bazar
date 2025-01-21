@@ -1,0 +1,14 @@
+.container {
+    width: 150px;
+    border: 1px solid black;
+}
+
+.picture {
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+}
+
+.description {
+    height: 100px;
+}

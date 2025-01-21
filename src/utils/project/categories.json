@@ -1,0 +1,55 @@
+[
+    {
+        "id": 1,
+        "name": "en vrac",
+        "banner": "test",
+        "subcategories": [
+            {
+                "id":1,
+                "name": "appareil de sport"
+            },
+            {
+                "id":2,
+                "name": "multimédia"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "livres",
+        "banner": "test",
+        "subcategories": [
+            {
+                "id":1,
+                "name": "littératures classiques"
+            },
+            {
+                "id":2,
+                "name": "livres historiques"
+            },
+            {
+                "id":3,
+                "name": "livres scientifiques"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "cartes à collectionner",
+        "banner": "test",
+        "subcategories": [
+            {
+                "id":1,
+                "name": "pokémon"
+            },
+            {
+                "id":2,
+                "name": "sport"
+            },
+            {
+                "id":3,
+                "name": "yu-gi-oh"
+            }
+        ]
+    }
+]
