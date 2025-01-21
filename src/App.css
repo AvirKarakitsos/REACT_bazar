@@ -1,0 +1,19 @@
+.headerComponent{
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid blue;
+}
+
+.headerList, .categoriesList {
+    list-style-type: none;
+}
+
+.categories {
+    display: flex;
+}
+
+.banner {
+    height: 100px;
+    border: 1px solid green;
+}
