@@ -12,7 +12,7 @@ function App() {
     <>
 	<Header/>
 	<div className='headerComponent'>
-		<h1>Le Bazar d'Avir</h1>
+		<h1 className='mainTitle'>Le Bazar d'Avir</h1>
 		<div>
 			<p>Trouvez votre objets sur les différentes plateformes</p>
 			<ul className='headerList'>

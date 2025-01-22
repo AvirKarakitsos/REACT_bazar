@@ -7,6 +7,13 @@
     border: 1px solid blue;
 }
 
+.mainTitle {
+    font-family: "Kalam", serif;
+    font-size: 100px;
+    font-weight: 700;
+    font-style: normal;
+}
+
 .headerList {
     display: flex;
     justify-content: center;
