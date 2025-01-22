@@ -1,14 +1,33 @@
 .container {
-    width: 150px;
+    width: 290px;
     border: 1px solid black;
 }
 
 .picture {
-    height: 100px;
-    width: 100px;
+    height: 290px;
+    width: 100%;
     border: 1px solid black;
 }
 
 .description {
-    height: 100px;
+    height: 87px;
+    padding: 8px 16px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.title {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.content {
+    font-size: 14px;
+    color: var(--color-text-1);
+}
+
+.price {
+    font-size: 14px;
+    color: var(--color-text-2);
 }

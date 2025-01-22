@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "vinted",
+        "logo": "/test"
+    },
+    {
+        "id": 2,
+        "name": "rakuten",
+        "logo": "/test"
+    },
+    {
+        "id": 3,
+        "name": "leboncoin",
+        "logo": "/test"
+    },
+    {
+        "id": 4,
+        "name": "ebay",
+        "logo": "/test"
+    }
+]

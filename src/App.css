@@ -3,12 +3,14 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     border: 1px solid blue;
 }
 
 .headerList {
     display: flex;
     justify-content: center;
+    column-gap: 50px;
 }
 
 .headerList, .categoriesList {
