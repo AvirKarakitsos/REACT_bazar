@@ -5,7 +5,8 @@ export type ArticleType = {
     description: string;
     availableOn: {
         id: number;
-        tag: string;
+        websiteId: number
+        link: string;
     }[];
     photos: {
         id: number;

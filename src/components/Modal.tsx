@@ -24,7 +24,7 @@ function Modal() {
                     <div className={styles.available}>
                         <p className={styles.availableText}>Disponible sur</p>
                         <ul className={styles.availableSite}>
-                            {article.availableOn.map(site => <li key={site.id}>{site.tag}</li>)}
+                            {article.availableOn.map(site => <li key={site.id}>{site.link}</li>)}
                         </ul>
                     </div>
                 </div>

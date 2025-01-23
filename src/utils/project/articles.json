@@ -7,11 +7,13 @@
         "availableOn": [
             {
                 "id":1,
-                "tag": "vinted"
+                "websiteId": 1,
+                "link": "vinted"
             },
             {
                 "id": 2,
-                "tag": "rakuten"
+                "websiteId": 2,
+                "link": "rakuten"
             }
         ],
         "photos": [
@@ -36,11 +38,13 @@
         "availableOn": [
             {
                 "id":1,
-                "tag": "vinted"
+                "websiteId": 1,
+                "link": "vinted"
             },
             {
                 "id": 2,
-                "tag": "rakuten"
+                "websiteId": 2,
+                "link": "rakuten"
             }
         ],
         "photos": [
@@ -65,11 +69,13 @@
         "availableOn": [
             {
                 "id":1,
-                "tag": "vinted"
+                "websiteId": 1,
+                "link": "vinted"
             },
             {
                 "id": 2,
-                "tag": "rakuten"
+                "websiteId": 4,
+                "link": "ebay"
             }
         ],
         "photos": [
