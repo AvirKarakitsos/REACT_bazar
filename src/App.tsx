@@ -28,7 +28,7 @@ function App() {
 					{categories.map(category => <li key={category.id}>{category.name}</li>)}
 				</ul>
 			</div>
-			{categories.map( categorie => <Category key={categorie.id} categoryId={categorie.id}/>)}
+			{categories.map( category => <Category key={category.id} categoryId={category.id}/>)}
 			<Modal/>
 			<Footer/>
 		</ModalProvider>

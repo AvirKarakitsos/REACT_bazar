@@ -1,12 +1,15 @@
 import styles from '../assets/styles/Logo.module.css'
 
-type website= {
-  id: number;
-  name: string;
-  logo: string;
+type LogoProps= {
+  website: {
+    id: number;
+    name: string;
+    logo: string;
 }
 
-function Logo(item: {website: website}) {
+}
+
+function Logo(item: LogoProps) {
 
   return (  
     <figure className={styles.container}>

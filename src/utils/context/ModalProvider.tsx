@@ -5,8 +5,6 @@ type ModalProviderProps = {
     children: ReactNode;
 };
 
-
-
 export const ModalProvider = ({ children }: ModalProviderProps) => {
     const [isOpen, setIsOpen] = useState(false)
  

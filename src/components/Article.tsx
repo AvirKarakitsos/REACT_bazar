@@ -1,13 +1,13 @@
 import { useContext } from 'react'
 import styles from '../assets/styles/Article.module.css'
-import { article } from '../utils/types/article'
+import { ArticleType } from '../utils/types/article'
 import { ModalContext, ModalContextType } from '../utils/context/ModalContext'
 
-type ArticleType = {
-    article: article
+type ArticleProps = {
+    article: ArticleType
 }
 
-function Article(item: ArticleType) {
+function Article(item: ArticleProps) {
     const {setIsOpen} = useContext(ModalContext) as ModalContextType
 
     return (

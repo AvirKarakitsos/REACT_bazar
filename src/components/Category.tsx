@@ -2,12 +2,11 @@ import styles from '../assets/styles/Category.module.css'
 import Article from './Article'
 import articles from '../utils/project/articles.json'
 
-type Categorytype = {
-    key: number,
+type CategoryProps = {
     categoryId: number
 }
 
-function Category(category: Categorytype) {
+function Category(category: CategoryProps) {
     const result = articles.filter(articleFilter => articleFilter.categoryId === category.categoryId)
 
     return (

@@ -1,4 +1,4 @@
-export type article = {
+export type ArticleType = {
     id: number;
     categoryId: number;
     title: string;
