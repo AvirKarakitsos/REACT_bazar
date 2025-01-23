@@ -15,3 +15,9 @@ export type ArticleType = {
     isNew: boolean;
     createdAt: string;
 }
+
+export type WebsiteType =  {
+    id: number;
+    name: string;
+    logo: string;
+}

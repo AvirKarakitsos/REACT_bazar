@@ -1,11 +1,8 @@
 import styles from '../assets/styles/Logo.module.css'
+import { WebsiteType } from '../utils/types/project'
 
 type LogoProps= {
-  website: {
-    id: number;
-    name: string;
-    logo: string;
-}
+  website: WebsiteType
 
 }
 
