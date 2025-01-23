@@ -9,3 +9,7 @@
   --color-text-1: #242427;
   --color-text-2: #606169;
 }
+
+body {
+  position: relative;
+}
