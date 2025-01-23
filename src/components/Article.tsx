@@ -8,10 +8,14 @@ type ArticleProps = {
 }
 
 function Article(item: ArticleProps) {
-    const {setIsOpen} = useContext(ModalContext) as ModalContextType
-
+    const {setIsOpen,setArticle} = useContext(ModalContext) as ModalContextType
+    const handleModal = () => {
+        setArticle(item.article)
+        setIsOpen(true)
+    }
+    
     return (
-        <article className={styles.container} onClick={()=>setIsOpen(true)}>
+        <article className={styles.container} onClick={handleModal}>
             <img src={item.article.photos[0].url} className={styles.picture}/>
             <div className={styles.description}>
                 <p className={styles.title}>{item.article.title}</p>
