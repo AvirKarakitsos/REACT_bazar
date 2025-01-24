@@ -2,6 +2,7 @@ import styles from '../assets/styles/Modal.module.css'
 import { createPortal } from 'react-dom'
 import { useContext } from 'react';
 import { ModalContext, ModalContextType } from '../utils/context/ModalContext';
+import Website from './Website';
 
 function Modal() {
     const modalRoot = document.getElementById("modal-root")!;
@@ -24,7 +25,7 @@ function Modal() {
                     <div className={styles.available}>
                         <p className={styles.availableText}>Disponible sur</p>
                         <ul className={styles.availableSite}>
-                            {article.availableOn.map(site => <li key={site.id}>{site.link}</li>)}
+                            {article.availableOn.map(site => <li key={site.id}><Website availabeOn={site}/></li>)}
                         </ul>
                     </div>
                 </div>

@@ -22,3 +22,9 @@ export type WebsiteType =  {
     name: string;
     logo: string;
 }
+
+export type AvailableOnType =  {
+    id: number;
+    websiteId: number;
+    link: string;
+}
