@@ -1,20 +1,22 @@
 import styles from '../assets/styles/Category.module.css'
 import Article from './Article'
 import articles from '../utils/project/articles.json'
+import { CategoryType } from '../utils/types/project'
+import { host } from '../utils/common/constants'
 
 type CategoryProps = {
-    categoryId: number
+    categoryElement: CategoryType
 }
 
 function Category(category: CategoryProps) {
-    const result = articles.filter(articleFilter => articleFilter.categoryId === category.categoryId)
+    const result = articles.filter(articleFilter => articleFilter.categoryId === category.categoryElement.id)
 
     return (
         <section className={styles.container}>
-            <div className={styles.banner}>logo</div>
+            <img src={host+category.categoryElement.banner} className={styles.banner}/>
 
             {
-                articles.filter(articleFilter => articleFilter.categoryId === category.categoryId)[0] !== undefined 
+                articles.filter(articleFilter => articleFilter.categoryId === category.categoryElement.id)[0] !== undefined 
                     ?   <div className={styles.articlesContainer}>
                             { result.map(item => <Article key={item.id} article={item}/>) }
                         </div>

@@ -17,6 +17,16 @@ export type ArticleType = {
     createdAt: string;
 }
 
+export type CategoryType = {
+    id: number;
+    name: string;
+    banner: string;
+    subcategories: {
+        id: number;
+        name: string;
+    }[]
+}
+
 export type WebsiteType =  {
     id: number;
     name: string;
