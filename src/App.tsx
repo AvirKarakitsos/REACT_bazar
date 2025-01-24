@@ -10,12 +10,11 @@ import { ModalProvider } from './utils/context/ModalProvider'
 
 function App() {
 
-	
 	return (
 		<ModalProvider>
 			<Header/>
 			<div className='headerComponent'>
-				<h1 className='mainTitle'>Le Bazar d'Avir</h1>
+				<h1 className='mainTitle'>Le bazar d'Avir</h1>
 				<div>
 					<p>Trouvez votre objets sur les différentes plateformes</p>
 					<ul className='headerList'>

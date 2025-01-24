@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "name": "en vrac",
+        "name": "En Vrac",
         "banner": "/banners/books.JPG",
         "subcategories": [
             {
@@ -16,7 +16,7 @@
     },
     {
         "id": 2,
-        "name": "livres",
+        "name": "Littérature",
         "banner": "/banners/books.JPG",
         "subcategories": [
             {
@@ -35,7 +35,7 @@
     },
     {
         "id": 3,
-        "name": "cartes à collectionner",
+        "name": "Objets à collectionner",
         "banner": "/banners/books.JPG",
         "subcategories": [
             {

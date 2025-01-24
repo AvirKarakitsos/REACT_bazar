@@ -13,7 +13,10 @@ function Category(category: CategoryProps) {
 
     return (
         <section className={styles.container}>
-            <img src={host+category.categoryElement.banner} className={styles.banner}/>
+            <div className={styles.bannerContainer}>
+                <img src={host+category.categoryElement.banner} className={styles.banner}/>
+                <h2 className={styles.bannerTitle}>{category.categoryElement.name}</h2>
+            </div>
 
             {
                 articles.filter(articleFilter => articleFilter.categoryId === category.categoryElement.id)[0] !== undefined 
