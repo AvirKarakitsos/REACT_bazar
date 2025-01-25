@@ -1,16 +1,19 @@
 .bannerContainer {
     position: relative;
+    height: 350px;
+    overflow: hidden;
 }
 
 .banner {
     width: 100%;
-    height: 500px;
+    position: absolute;
     object-fit: cover;
     filter: brightness(0.5) blur(1px);
+    z-index: 10;
 }
 
 .bannerTitle {
-    padding-left: 25px;
+    padding-left: 20px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -18,6 +21,7 @@
     font-size: 50px;
     color: #fff;
     border-left: 1px solid #fff;
+    z-index: 20;
 }
 
 .articlesContainer {

@@ -31,3 +31,17 @@
     align-items: center;
     column-gap: 10px;
 }
+
+/*Banners*/
+.banner_1{
+    top: -10px;
+    left: 0;
+}
+.banner_2{
+    top: -10px;
+    left: 0;
+}
+.banner_3{
+    top: -150px;
+    left: 0;
+}
