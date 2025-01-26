@@ -12,22 +12,19 @@ function App() {
 
 	return (
 		<ModalProvider>
-			<Header/>
+			<Header headerItems={categories} />
 			<div className='headerComponent'>
 				<h1 className='mainTitle'>Le bazar d'Avir</h1>
 				<div>
 					<p>Trouvez votre objets sur les différentes plateformes</p>
 					<ul className='headerList'>
-						{websites.map(website => <li key={website.id}><Logo website={website}/></li>)}
+						{websites.map(website => <li key={website.id}><Logo logoItem={website}/></li>)}
 					</ul>
 				</div>
 			</div>
-			<div className='categories'>
-				<ul className='categoriesList'>
-					{categories.map(category => <li key={category.id}>{category.name}</li>)}
-				</ul>
+			<div>
+				{categories.map( category => <Category key={category.id} categoryItem={category}/>)}
 			</div>
-			{categories.map( category => <Category key={category.id} categoryElement={category}/>)}
 			<Modal/>
 			<Footer/>
 		</ModalProvider>

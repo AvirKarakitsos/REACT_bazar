@@ -18,18 +18,7 @@
     display: flex;
     justify-content: center;
     column-gap: 50px;
-}
-
-.headerList, .categoriesList {
     list-style-type: none;
-}
-
-.categoriesList {
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 10px;
 }
 
 /*Banners*/

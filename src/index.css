@@ -8,6 +8,8 @@
 :root {
   --color-text-1: #242427;
   --color-text-2: #606169;
+  --color-border: rgba(51, 153, 153, 0.1);
+  scroll-behavior: smooth;
 }
 
 body {
