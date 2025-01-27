@@ -41,6 +41,10 @@
     height: 100%;
 }
 
+.imageW {
+    width: 100%;
+}
+
 .subSection {
     height: 18%;
     display: flex;
@@ -55,6 +59,7 @@
 
 .descriptionContainer {
     width: 50%;
+    padding: 0 5px;
     display: flex;
     flex-direction: column;
 }
