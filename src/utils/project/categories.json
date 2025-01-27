@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "En Vrac",
-        "banner": "/banners/books.JPG",
+        "banner": "/banners/other.JPG",
         "subcategories": [
             {
                 "id":1,
