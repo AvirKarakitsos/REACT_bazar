@@ -3,6 +3,7 @@ import { createPortal } from 'react-dom'
 import { useContext } from 'react';
 import { ModalContext, ModalContextType } from '../utils/context/ModalContext';
 import Website from './Website';
+import { host } from '../utils/common/constants';
 
 function Modal() {
     const modalRoot = document.getElementById("modal-root")!;
@@ -13,8 +14,13 @@ function Modal() {
     return createPortal(
         <div className={styles.overlay}>
             <div className={styles.modal}>
-                <div className={styles.imageContainer}>
-                    <img src={article.photos[0].url} alt="" className={styles.image}/>
+                <div className={styles.imagesContainer}>
+                    <div className={styles.imageContainer}>
+                        <img src={host+article.photos[0].url} alt="photo de l'article" className={styles.image}/>
+                    </div>
+                    <div className={styles.subSection}>
+                        {article.photos.map(photo => <img src={host+photo.url} className={styles.shortImage}/>)}
+                    </div>
                 </div>
                 <div className={styles.descriptionContainer}>
                     <div className={styles.content}>

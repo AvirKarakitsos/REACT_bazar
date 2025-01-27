@@ -19,11 +19,15 @@
         "photos": [
             {
                 "id":1,
-                "url": "test"
+                "url": "/articles/IMG_1_1.JPG"
             },
             {
                 "id": 2,
-                "url": "test"
+                "url": "/articles/IMG_1_2.JPG"
+            },
+            {
+                "id": 2,
+                "url": "/articles/IMG_1_3.JPG"
             }
         ],
         "price": 3.5,
@@ -50,11 +54,11 @@
         "photos": [
             {
                 "id":1,
-                "url": "test"
+                "url": "/articles/IMG_2_1.JPG"
             },
             {
                 "id": 2,
-                "url": "test"
+                "url": "/articles/IMG_2_2.JPG"
             }
         ],
         "price": 4,
@@ -81,11 +85,11 @@
         "photos": [
             {
                 "id":1,
-                "url": "test"
+                "url": "/articles/IMG_3_1.JPG"
             },
             {
                 "id": 2,
-                "url": "test"
+                "url": "/articles/IMG_3_2.JPG"
             }
         ],
         "price": 5,

@@ -1,5 +1,6 @@
 .headerComponent{
-    height: 500px;
+    height: 80vh;
+    margin-bottom: 20vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -33,4 +34,8 @@
 .banner_3{
     top: -150px;
     left: 0;
+}
+
+img {
+    display: block;
 }

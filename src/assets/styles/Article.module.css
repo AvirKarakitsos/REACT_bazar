@@ -1,12 +1,18 @@
 .container {
     width: 350px;
-    border: 1px solid black;
 }
 
-.picture {
+.imageContainer {
     height: 290px;
     width: 100%;
-    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-border);
+}
+
+.image {
+    height: 100%;
 }
 
 .description {
