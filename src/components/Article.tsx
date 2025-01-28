@@ -21,7 +21,7 @@ function Article(item: ArticleProps) {
                 <img src={host+item.article.photos[0].url} className={styles.image}/>
             </div>
             <div className={styles.description}>
-                <p className={styles.title}>{item.article.title}</p>
+                <h4 className={styles.title}>{item.article.title}</h4>
                 <p className={styles.content}>{item.article.description}</p>
                 <p className={styles.price}>{"A partir de "+item.article.price+"€"}</p>
             </div>

@@ -16,7 +16,7 @@ function App() {
 			<div className='headerComponent'>
 				<h1 className='mainTitle'>Le bazar d'Avir</h1>
 				<div>
-					<p>Trouvez votre objets sur les différentes plateformes</p>
+					<h2>Trouvez votre objets sur les différentes plateformes</h2>
 					<ul className='headerList'>
 						{websites.map(website => <li key={website.id}><Logo logoItem={website}/></li>)}
 					</ul>

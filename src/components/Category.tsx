@@ -15,7 +15,7 @@ function Category(category: CategoryProps) {
         <section className={styles.container}>
             <div id={`category_${category.categoryItem.id}`} className={styles.bannerContainer}>
                 <img src={host+category.categoryItem.banner} className={`banner_${category.categoryItem.id} ${styles.banner}`}/>
-                <h2 className={styles.bannerTitle}>{category.categoryItem.name}</h2>
+                <h3 className={styles.bannerTitle}>{category.categoryItem.name}</h3>
             </div>
 
             {
