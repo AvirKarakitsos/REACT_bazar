@@ -4,7 +4,7 @@ function Footer() {
 
   return (
     <div className={styles.container}>     
-      <h1>Footer Part</h1>
+      <h1 className='mainTitle'>Le Bazar d'Avir</h1>
     </div>
   )
 }

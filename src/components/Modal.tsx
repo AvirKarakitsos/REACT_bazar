@@ -1,6 +1,6 @@
 import styles from '../assets/styles/Modal.module.css'
 import { createPortal } from 'react-dom'
-import { SyntheticEvent, useContext, useState } from 'react';
+import { MouseEvent, SyntheticEvent, useContext, useState } from 'react';
 import { ModalContext, ModalContextType } from '../utils/context/ModalContext';
 import Website from './Website';
 import { host } from '../utils/common/constants';
@@ -10,6 +10,21 @@ function Modal() {
     const {isOpen, setIsOpen, article} = useContext(ModalContext) as ModalContextType
     const [display,setDisplay] = useState("")
     const [dimensions, setDimensions] = useState({ width: 0, height: 0 })
+
+    function handleImageShort(event: MouseEvent<HTMLDivElement>) {
+        const target = event.target as HTMLElement
+        const parentDiv = event.currentTarget
+        const childImages = parentDiv.querySelectorAll("img")
+
+        if (target.tagName === "IMG") {
+            const imgElement = target as HTMLImageElement
+            setDisplay(imgElement.src)
+            childImages.forEach((img) => {
+                img.classList.remove("selected")
+            })
+            imgElement.classList.add("selected")
+        }
+    }
 
     function handleImageLoad(event: SyntheticEvent<HTMLImageElement>) {
         const { naturalWidth, naturalHeight } = event.currentTarget
@@ -30,12 +45,12 @@ function Modal() {
                     <div className={styles.imageContainer}>
                             <img 
                                 onLoad={handleImageLoad} 
-                                src={display === "" ? host+article.photos[0].url : host+display} 
+                                src={display === "" ? host+article.photos[0].url : display} 
                                 alt="photo de l'article" 
                                 className={dimensions.height > dimensions.width ? styles.image : styles.imageW}/>                 
                     </div>
-                    <div className={styles.subSection}>
-                        {article.photos.map(photo => <img key={photo.id} src={host+photo.url} className={styles.shortImage} onClick={() => setDisplay(photo.url)}/>)}
+                    <div className={styles.subSection} onClick={handleImageShort}>
+                        {article.photos.map(photo => <img key={photo.id} src={host+photo.url} className={styles.shortImage}/>)}
                     </div>
                 </div>
                 <div className={styles.descriptionContainer}>
