@@ -15,6 +15,29 @@
     font-style: normal;
 }
 
+.subTitleBox {
+    height: 30px;
+    width: 700px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid red;
+}
+
+.subTitle {
+    position: absolute;
+    top: 30px;
+    animation: slideUp 1250ms ease-out 500ms forwards;
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-30px);
+    }
+}
+
 .headerList {
     display: flex;
     justify-content: center;
