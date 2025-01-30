@@ -2,21 +2,25 @@
     {
         "id": 1,
         "name": "vinted",
-        "logo": "/logos/vinted-mini.jpeg"
+        "logo": "/logos/vinted.svg",
+        "logoShort": "/logos/vinted-mini.jpeg"
     },
     {
         "id": 2,
         "name": "rakuten",
-        "logo": "/logos/rakuten-mini.svg"
+        "logo": "/logos/rakuten.svg",
+        "logoShort": "/logos/rakuten-mini.svg"
     },
     {
         "id": 3,
         "name": "leboncoin",
-        "logo": "/logos/leboncoin-mini.svg"
+        "logo": "/logos/leboncoin.svg",
+        "logoShort": "/logos/leboncoin-mini.svg"
     },
     {
         "id": 4,
         "name": "ebay",
-        "logo": "/logos/ebay-mini.png"
+        "logo": "/logos/ebay.svg",
+        "logoShort": "/logos/ebay-mini.png"
     }
 ]

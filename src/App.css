@@ -1,5 +1,6 @@
 .headerComponent{
     height: 80vh;
+    position: relative;
     margin-bottom: 20vh;
     display: flex;
     flex-direction: column;
@@ -39,11 +40,25 @@
 }
 
 .headerList {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     justify-content: center;
     column-gap: 50px;
     list-style-type: none;
+    z-index: 10;
+    opacity: 0;
+    animation: showUp 0s step-start 1s forwards;
 }
+
+@keyframes showUp {
+    100% {
+        opacity: 1;
+    }
+}
+
 
 /*Banners*/
 .banner_1{

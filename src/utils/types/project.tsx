@@ -31,6 +31,7 @@ export type WebsiteType =  {
     id: number;
     name: string;
     logo: string;
+    logoShort: string;
 }
 
 export type AvailableOnType =  {

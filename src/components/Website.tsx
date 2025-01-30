@@ -14,7 +14,7 @@ function Website(site: WebsiteProps) {
     return (
        <figure className={styles.container}>
             <a href={site.availabeOn.link} target="_blank" rel="noreferrer">
-                <img src={host+result.logo} alt="logo" className={styles.image}/>
+                <img src={host+result.logoShort} alt="logo" className={styles.image}/>
             </a>
             <figcaption className={styles.title}>{result.name}</figcaption>
        </figure>
