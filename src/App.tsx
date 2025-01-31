@@ -14,7 +14,6 @@ function App() {
 		<ModalProvider>
 			<Header headerItems={categories} />
 			<div className='headerComponent'>
-				<h1 className='mainTitle'>Le bazar d'Avir</h1>
 				<div>
 					<div className='subTitleBox'>
 						<h2 className='subTitle'>Tous nos articles disponibles sur les différentes plateformes</h2>

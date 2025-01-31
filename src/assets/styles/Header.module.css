@@ -1,10 +1,12 @@
 .container {
+    position: relative;
     height: 60px;
     width: 100%;
     padding: 18px 50px;
     position: fixed;
     display: flex;
     justify-content: center;
+    align-items: center;
     border-bottom: 1px solid var(--color-border);
     background-color: #fff;
     z-index: 30;
@@ -16,6 +18,17 @@
     align-items: center;
     column-gap: 20px;
     list-style-type: none;
+}
+
+
+.mainTitle {
+    position: absolute;
+    top: 8px;
+    left: 100px;
+    font-family: "Kalam", serif;
+    font-size: 30px;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .link {

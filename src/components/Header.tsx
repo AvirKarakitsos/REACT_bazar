@@ -9,7 +9,7 @@ function Header(items: HeaderProps) {
 
   return (
     <div className={styles.container}>
-		{/* <div>logo</div>       */}
+		<h1 className={styles.mainTitle}>Le bazar d'Avir</h1>
 		<div className={styles.categories}>
 			<ul className={styles.navbar}>
 				{items.headerItems.map(category => <li key={category.id}><a className={styles.link} href={`#category_${category.id}`}>{category.name}</a></li>)}
