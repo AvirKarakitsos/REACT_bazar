@@ -1,3 +1,8 @@
+.container {
+    width: 100px;
+    position: relative;
+}
+
 .image {
-    height: 25px;
+    height: 35px;
 }
