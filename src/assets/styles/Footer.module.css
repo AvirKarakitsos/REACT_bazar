@@ -12,3 +12,14 @@
     font-weight: 700;
     font-style: normal;
 }
+
+@media screen and (width<=768px) {
+    .container {
+        height: 150px;
+        margin-bottom: 100px;
+    }
+    
+    .mainTitle {
+        font-size: 50px;
+    }
+}
