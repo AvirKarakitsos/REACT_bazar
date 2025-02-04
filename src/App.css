@@ -26,7 +26,7 @@
     padding: 20px 15px;
     position: absolute;
     top: 250px;
-    left: 45%;
+    left: 38%;
     display: flex;
     flex-direction: column;
     row-gap: 35px;
@@ -52,8 +52,10 @@
 
 .headerList {
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-start;
     column-gap: 50px;
+    row-gap: 25px;
     list-style-type: none;
     /* background-color: #fff; */
     /* animation: slideUp 1250ms ease-out 1s forwards; */
@@ -96,10 +98,23 @@
     left: 0;
 }
 
-
-
 .selected {
     border: 1px solid #000;
     padding: 1px;
 }
 
+@media screen and (width<=1024px) {
+    .subTitleBox {
+        width: 100%;
+        top: 250px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media screen and (width<=768px) {
+    .subTitle {
+        line-height: 50px;
+        font-size: 40px;
+    }
+}
