@@ -37,3 +37,9 @@
     font-size: 14px;
     color: var(--color-text-2);
 }
+
+@media screen and (width <= 768px) {
+    .container {
+        width: 300px;
+    }
+}

@@ -113,6 +113,13 @@
 }
 
 @media screen and (width<=768px) {
+    .subTitleBox {
+        width: 100%;
+        top: 200px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
     .subTitle {
         line-height: 50px;
         font-size: 40px;
