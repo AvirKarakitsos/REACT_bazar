@@ -19,7 +19,7 @@ function App() {
 					<source src={video} type='video/mp4'/>
 				</video>
 				<div className='subTitleBox'>
-					<h2 className='subTitle'>farfouille et deniche !</h2>
+					<h2 className='subTitle'>chine et deniche !</h2>
 					<p className='subContent'>Tous nos articles disponibles sur les différentes plateformes</p>
 					<ul className='headerList'>
 						{websites.map(website => <li key={website.id}><Logo logoItem={website}/></li>)}

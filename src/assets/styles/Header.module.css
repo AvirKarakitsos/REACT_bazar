@@ -38,19 +38,7 @@
 }
 
 @media screen and (width<=1024px) {
-    .container {
-       justify-content: space-between;
-    }
-
     .mainTitle {
-        position: static;
         font-size: 25px;
     }
-
-}
-
-@media screen and (width<=768px) {
-    .container {
-        justify-content: center;
-     }
 }

@@ -39,8 +39,10 @@
 
 .subTitle {
     line-height: 50px;
-    font-size: 30px;
-    font-weight: 400;
+    font-family:  "Gowun Dodum", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 35px;
     color: #000;
     text-transform: uppercase;
     /* background-color: #000; */
@@ -48,7 +50,10 @@
 }
 
 .subContent {
-    font-size: 17px;
+    font-size: 20px;
+    font-family:  "Gowun Dodum", serif;
+    font-weight: 400;
+    font-style: normal;
     color: var(--color-text-2);
 }
 
@@ -57,7 +62,7 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     column-gap: 30px;
-    row-gap: 25px;
+    row-gap: 20px;
     list-style-type: none;
     /* background-color: #fff; */
     /* animation: slideUp 1250ms ease-out 1s forwards; */
@@ -76,7 +81,7 @@
 /*Logos */
 .logo_2 {
     position: relative;
-    top: 7px;
+    top: 6px;
 }
 
 .logo_4 {
