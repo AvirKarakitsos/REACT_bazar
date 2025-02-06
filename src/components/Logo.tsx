@@ -8,9 +8,7 @@ type LogoProps= {
 function Logo(item: LogoProps) {
 
   return (  
-    <figure className={styles.container}>
-        <img src={item.logoItem.logo} alt={`logo ${item.logoItem.name}`} className={`logo_${item.logoItem.id} ${styles.image}`}/>
-    </figure>
+    <img src={item.logoItem.logo} alt={`logo ${item.logoItem.name}`} className={`logo_${item.logoItem.id} ${styles.image}`}/>
   )
 }
 

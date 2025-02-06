@@ -1,18 +1,16 @@
 .headerComponent{
+    height: 85vh;
     position: relative;
     margin-bottom: 20vh;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
 }
 
 .video {
-    height: 100vh;
-    width: 100%;
+    height: 100%;
+    width: 50%;
     object-fit: cover;
-    filter: blur(0);
-    animation: blurEffect 1500ms  ease-in 2500ms forwards;
+    /* filter: blur(0);
+    animation: blurEffect 1500ms  ease-in 2500ms forwards; */
 }
 
 @keyframes blurEffect {
@@ -22,18 +20,15 @@
 }
 
 .subTitleBox {
-    max-width: 700px;
-    padding: 20px 15px;
-    position: absolute;
-    top: 250px;
-    left: 38%;
+    height: 100%;
+    width: 50%;
+    padding-left: 100px;
     display: flex;
     flex-direction: column;
-    row-gap: 35px;
-    overflow: hidden;
-    /* background-color: #fff; */
-    opacity: 0;
-    animation: showUp 0s step-start 4s forwards;
+    justify-content: center;
+    align-items: flex-start;
+    row-gap: 15px;
+    /*animation: showUp 0s step-start 4s forwards; */
 }
 
 @keyframes showUp {
@@ -43,18 +38,25 @@
 }
 
 .subTitle {
-    line-height: 70px;
-    font-size: 50px;
+    line-height: 50px;
+    font-size: 30px;
     font-weight: 400;
-    color: #fff;
+    color: #000;
+    text-transform: uppercase;
+    /* background-color: #000; */
     /* animation: slideUp 1250ms ease-out 1s forwards; */
+}
+
+.subContent {
+    font-size: 17px;
+    color: var(--color-text-2);
 }
 
 .headerList {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    column-gap: 50px;
+    column-gap: 30px;
     row-gap: 25px;
     list-style-type: none;
     /* background-color: #fff; */
@@ -74,13 +76,12 @@
 /*Logos */
 .logo_2 {
     position: relative;
-    top:  7px;
+    top: 7px;
 }
 
 .logo_4 {
     position: relative;
-    top:  6px;
-    left: 70px;
+    top: 6px;
 }
 
 
