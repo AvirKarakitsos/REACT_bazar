@@ -11,11 +11,9 @@ function Header(items: HeaderProps) {
 		<div className={styles.container}>
 			<h1 className={styles.mainTitle}>Le bazar d'Avir</h1>
 			{window.innerWidth > 768
-				? <div className={styles.categories}>
-					<ul className={styles.navbar}>
+				? <ul className={styles.navbar}>
 						{items.headerItems.map(category => <li key={category.id}><a className={styles.link} href={`#category_${category.id}`}>{category.name}</a></li>)}
 					</ul>
-				</div>
 				: null
 			}
 		</div>

@@ -1,5 +1,4 @@
 .container {
-    position: relative;
     height: 80px;
     width: 100%;
     padding: 18px 50px;
@@ -40,5 +39,16 @@
 @media screen and (width<=1024px) {
     .mainTitle {
         font-size: 25px;
+        left: 50px;
+    }
+    .container {
+        justify-content: flex-end;
+    }
+}
+
+@media screen and (width<=768px) {
+    .mainTitle {
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
