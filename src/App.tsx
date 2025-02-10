@@ -15,9 +15,11 @@ function App() {
 		<ModalProvider>
 			<Header headerItems={categories} />
 			<div className='headerComponent'>
-				<video muted className='video'>
-					<source src={video} type='video/mp4'/>
-				</video>
+				<div className='videoContainer'>
+					<video autoPlay muted className='video'>
+						<source src={video} type='video/mp4'/>
+					</video>
+				</div>
 				<div className='subTitleBox'>
 					<h2 className='subTitle'>chine et deniche !</h2>
 					<p className='subContent'>Tous nos articles disponibles sur les différentes plateformes</p>
