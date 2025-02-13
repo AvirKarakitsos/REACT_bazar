@@ -36,12 +36,6 @@
     row-gap: 45px;
 }
 
-@keyframes showUp {
-    100% {
-        opacity: 1;
-    }
-}
-
 .subTitle {
     font-family: "Stardos Stencil", serif;
     font-weight: 700;
@@ -68,15 +62,6 @@
     row-gap: 20px;
     list-style-type: none;
 }
-
-/* @keyframes slideUp {
-    0% {
-        transform: translateY(0);
-    }
-    100% {
-        transform: translateY(-30px);
-    }
-} */
 
 
 /*Logos */

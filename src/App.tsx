@@ -16,7 +16,7 @@ function App() {
 			<Header headerItems={categories} />
 			<div className='headerComponent'>
 				<div className='videoContainer'>
-					<video autoPlay muted className='video'>
+					<video muted className='video'>
 						<source src={video} type='video/mp4'/>
 					</video>
 				</div>
