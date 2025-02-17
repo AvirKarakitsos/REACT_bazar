@@ -6,8 +6,8 @@ import Logo from './components/Logo'
 import Modal from './components/Modal'
 import categories from "./utils/project/categories.json"
 import websites from "./utils/project/websites.json"
-import { ModalProvider } from './utils/context/ModalProvider'
 import video from './assets/video/IMG_5811.mp4'
+import { ModalProvider } from './utils/context/ModalProvider'
 
 function App() {
 

@@ -4,7 +4,7 @@ function Footer() {
 
   return (
     <div className={styles.container}>     
-      <h2 className={styles.mainTitle}>Le Bazar d'Avir</h2>
+    	<h2 className={styles.mainTitle}>Le Bazar d'Avir</h2>
     </div>
   )
 }

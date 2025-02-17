@@ -13,7 +13,8 @@ const emptyArticle: ArticleType = {
     description: "",
     availableOn: [{
         id: 0,
-        tag: "",
+        websiteId:0,
+        link: "",
     }],
     photos: [{
         id: 0,

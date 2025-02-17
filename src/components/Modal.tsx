@@ -1,8 +1,8 @@
 import styles from '../assets/styles/Modal.module.css'
+import Website from './Website';
 import { createPortal } from 'react-dom'
 import { MouseEvent, SyntheticEvent, useContext, useState } from 'react';
 import { ModalContext, ModalContextType } from '../utils/context/ModalContext';
-import Website from './Website';
 import { host } from '../utils/common/constants';
 
 function Modal() {

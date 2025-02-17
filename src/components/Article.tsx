@@ -1,5 +1,5 @@
-import { useContext } from 'react'
 import styles from '../assets/styles/Article.module.css'
+import { useContext } from 'react'
 import { ArticleType } from '../utils/types/project'
 import { ModalContext, ModalContextType } from '../utils/context/ModalContext'
 import { host } from '../utils/common/constants'
