@@ -1,34 +1,25 @@
-.headerComponent{
+.headerComponent {
     height: 85vh;
-    margin-bottom: 20vh;
-    padding: 82px 0px 2px 2px;
+    padding: 80px 0px 0px 0px;
     display: flex;
     border-bottom: 1px solid var(--color-text-1);
 }
 
-.videoContainer {
-    overflow: hidden;
+.imageContainer {
     width: 50%;
 }
 
-.video {
+.mainImage {
     height: 100%;
-    width: 100%;
+    aspect-ratio: 1 / 1;
+    display: block;
     object-fit: cover;
-    transform: scale(1.3);
-    animation: scaleEffect 4000ms  ease-in 500ms forwards;
-}
-
-@keyframes scaleEffect {
-    100% {
-        transform: scale(1);
-    }
 }
 
 .subTitleBox {
     height: 100%;
     width: 50%;
-    padding-left: 75px;
+    padding: 0px 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,7 +28,7 @@
 }
 
 .subTitle {
-    font-family: "Stardos Stencil", serif;
+    font-family: 'Stardos Stencil', serif;
     font-weight: 700;
     font-style: normal;
     font-size: 50px;
@@ -48,7 +39,7 @@
 
 .subContent {
     font-size: 20px;
-    font-family:  "Gowun Dodum", serif;
+    font-family: 'Gowun Dodum', serif;
     font-weight: 400;
     font-style: normal;
     color: var(--color-text-2);
@@ -63,7 +54,6 @@
     list-style-type: none;
 }
 
-
 /*Logos */
 .logo_2 {
     position: relative;
@@ -75,17 +65,16 @@
     top: 6px;
 }
 
-
 /*Banners*/
-.banner_1{
+.banner_1 {
     top: -10px;
     left: 0;
 }
-.banner_2{
+.banner_2 {
     top: -10px;
     left: 0;
 }
-.banner_3{
+.banner_3 {
     top: -150px;
     left: 0;
 }
@@ -100,9 +89,9 @@
         padding-left: 50px;
         row-gap: 35px;
     }
-     .subTitle {
+    .subTitle {
         font-size: 35px;
-     }
+    }
 }
 
 @media screen and (width<=768px) {
@@ -120,9 +109,9 @@
         row-gap: 20px;
     }
     .subTitle {
-        font-size: 27PX;
+        font-size: 27px;
     }
     .subContent {
-        font-size: 17PX;
+        font-size: 17px;
     }
 }
