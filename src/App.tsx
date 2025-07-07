@@ -28,12 +28,12 @@ function App() {
                 </div>
             </div>
 
-            <div>
+            <div className="subContainer">
                 <p className="subContent">
                     Tous nos articles disponibles sur les différentes
                     plateformes
                 </p>
-                <ul className="headerList">
+                <ul className="subList">
                     {websites.map((website) => (
                         <li key={website.id}>
                             <Logo logoItem={website} />

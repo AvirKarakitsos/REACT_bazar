@@ -1,21 +1,22 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Hem Sans,helvetica,arial;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: Hem Sans,helvetica,arial; */
+    font-family: 'Roboto', sans-serif;
 }
 
 :root {
-  --color-text-1: #242427;
-  --color-text-2: #606169;
-  --color-border: rgba(51, 153, 153, 0.1);
-  scroll-behavior: smooth;
+    --color-text-1: #242427;
+    --color-text-2: #606169;
+    --color-border: rgba(51, 153, 153, 0.1);
+    scroll-behavior: smooth;
 }
 
 body {
-  position: relative;
+    position: relative;
 }
 
 img {
-  display: block;
+    display: block;
 }
