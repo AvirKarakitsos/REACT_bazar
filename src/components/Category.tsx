@@ -15,12 +15,7 @@ function Category(category: CategoryProps) {
 
     return (
         <section className={styles.container}>
-            <div
-                id={`category_${category.categoryItem.id}`}
-                className={styles.bannerContainer}
-            >
-                <div>{category.categoryItem.name}</div>
-            </div>
+            <h3 className={styles.title}>{category.categoryItem.name}</h3>
 
             {articles.filter(
                 (articleFilter) =>

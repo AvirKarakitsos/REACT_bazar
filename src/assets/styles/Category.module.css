@@ -1,7 +1,15 @@
-.bannerContainer {
-    position: relative;
-    height: 350px;
-    overflow: hidden;
+.container {
+    padding: 50px;
+}
+
+.title {
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--color-text-2);
+    border-radius: 30px;
+    background-color: var(--color-border);
 }
 
 .banner {
