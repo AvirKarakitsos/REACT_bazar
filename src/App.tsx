@@ -4,15 +4,26 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import Logo from './components/Logo';
 import Modal from './components/Modal';
-import categories from './utils/project/categories.json';
 import websites from './utils/project/websites.json';
 import image from './assets/images/vg_republique.png';
+import { useFetch } from './utils/common/useFetch';
 import { ModalProvider } from './utils/context/ModalProvider';
+import { serverUrl } from './utils/common/constants';
+import { CategoryType } from './utils/types/project';
+
+type FetchApp = {
+    load: boolean;
+    data: CategoryType[];
+};
 
 function App() {
+    const { load: loadCategories, data: categories }: FetchApp = useFetch(
+        `${serverUrl}/api/categories`,
+    );
+
     return (
         <ModalProvider>
-            <Header headerItems={categories} />
+            <Header data={categories} load={loadCategories} />
             <div className="headerComponent">
                 <div className="imageContainer">
                     <img
@@ -43,9 +54,11 @@ function App() {
             </div>
 
             <div>
-                {categories.map((category) => (
-                    <Category key={category.id} categoryItem={category} />
-                ))}
+                {!loadCategories
+                    ? categories.map((category) => (
+                          <Category key={category.id} categoryItem={category} />
+                      ))
+                    : null}
             </div>
             <Modal />
             <Footer />

@@ -16,7 +16,7 @@ function Category(category: CategoryProps) {
     return (
         <section className={styles.container}>
             <h3 className={styles.title}>{category.categoryItem.name}</h3>
-
+            {/* 
             {articles.filter(
                 (articleFilter) =>
                     articleFilter.categoryId === category.categoryItem.id,
@@ -30,7 +30,7 @@ function Category(category: CategoryProps) {
                 <div className={styles.message}>
                     <p>Pas d'article pour le moment</p>
                 </div>
-            )}
+            )} */}
         </section>
     );
 }
