@@ -24,7 +24,7 @@ function App() {
     return (
         <ModalProvider>
             <Header data={categories} load={loadCategories} />
-            <div className="headerComponent">
+            <div className="topSection">
                 <div className="imageContainer">
                     <img
                         className="mainImage"
@@ -56,7 +56,7 @@ function App() {
             <div>
                 {!loadCategories
                     ? categories.map((category) => (
-                          <Category key={category.id} categoryItem={category} />
+                          <Category key={category.id} category={category} />
                       ))
                     : null}
             </div>
