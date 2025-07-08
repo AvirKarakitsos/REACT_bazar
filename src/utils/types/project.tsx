@@ -1,20 +1,14 @@
 export type ArticleType = {
     id: number;
-    categoryId: number;
     title: string;
     description: string;
-    availableOn: {
+    photos: number;
+    price: number;
+    websites: {
         id: number;
-        websiteId: number;
+        logoShort: string;
         link: string;
     }[];
-    photos: {
-        id: number;
-        url: string;
-    }[];
-    price: number;
-    isNew: boolean;
-    createdAt: string;
 };
 
 export type CategoryType = {
