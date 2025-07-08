@@ -8,12 +8,12 @@ type ArticleProps = {
     article: ArticleType;
 };
 
-function Article(item: ArticleProps) {
+function Article({ article }: ArticleProps) {
     const { setIsOpen, setArticle } = useContext(
         ModalContext,
     ) as ModalContextType;
     const handleModal = () => {
-        setArticle(item.article);
+        setArticle(article);
         setIsOpen(true);
     };
 
@@ -21,15 +21,15 @@ function Article(item: ArticleProps) {
         <article className={styles.container} onClick={handleModal}>
             <div className={styles.imageContainer}>
                 <img
-                    src={host + '_' + item.article.id + '_0'}
+                    src={host + '_' + article.id + '_0'}
                     className={styles.image}
                 />
             </div>
             <div className={styles.description}>
-                <h4 className={styles.title}>{item.article.title}</h4>
-                {/* <p className={styles.content}>{item.article.description}</p> */}
+                <h4 className={styles.title}>{article.title}</h4>
+                {/* <p className={styles.content}>{article.description}</p> */}
                 <p className={styles.price}>
-                    {'A partir de ' + item.article.price / 100 + '€'}
+                    {'A partir de ' + article.price / 100 + '€'}
                 </p>
             </div>
         </article>

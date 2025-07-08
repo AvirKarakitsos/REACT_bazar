@@ -18,8 +18,7 @@ export type CategoryType = {
 
 export type WebsiteType = {
     id: number;
-    name: string;
-    logo: string;
+    link: string;
     logoShort: string;
 };
 
