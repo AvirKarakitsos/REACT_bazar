@@ -21,7 +21,7 @@ function Article({ article }: ArticleProps) {
         <article className={styles.container} onClick={handleModal}>
             <div className={styles.imageContainer}>
                 <img
-                    src={host + '_' + article.id + '_0'}
+                    src={`${host}/articles/IMG_${article.id}_0.JPG`}
                     className={styles.image}
                 />
             </div>

@@ -49,7 +49,7 @@ function Modal() {
                             onLoad={handleImageLoad}
                             src={
                                 display === ''
-                                    ? host + '_' + article.id + '_0'
+                                    ? `${host}/articles/IMG_${article.id}_0.JPG`
                                     : display
                             }
                             alt="photo de l'article"
@@ -67,7 +67,7 @@ function Modal() {
                         {[...Array(article.photos)].map((_, i) => (
                             <img
                                 key={i}
-                                src={host + '_' + article.id + '_' + i}
+                                src={`${host}/articles/IMG_${article.id}_${i}.JPG`}
                                 className={styles.shortImage}
                             />
                         ))}
